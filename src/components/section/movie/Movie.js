@@ -23,6 +23,7 @@ const setVoteClass = (vote) => {
 //Each one of this is wrapped in a div component that has an onClick listener that redirects us to movie details 
 // if we click on it.
 //Everything else is quite self-explanatory.
+//The logic is same behind shows tab so I decided to not comment it out.
 const Movie = ({ title, poster_path, overview, vote_average, viewMovieInfo, movieId }) => {
     return (
         <Fragment> {/* The reason I use Fragments is because I don't want to have unncessary divs all round the place.*/}
