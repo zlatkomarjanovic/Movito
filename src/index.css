@@ -1,0 +1,294 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+	
+}
+
+body {
+	background-color: #101116; 
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+header {
+	min-height: 70px;
+	background: #0a0b0e;
+	color: #f5f5f5;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap
+}
+
+header .logo {
+	
+	margin-left: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #d90947; 
+}
+
+header ul {
+	list-style: none;
+	margin-right: 50px
+}
+
+header ul li {
+	display: inline-block
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #d90947;
+	text-transform: uppercase;
+	opacity: 0.7;
+	padding: 0 15px; 
+	font-weight: bold;
+}
+
+header ul li a:hover {
+	opacity: 1
+}
+
+header .close,
+header .menu {
+	cursor: pointer;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	margin-right: 20px;
+	display: none
+}
+
+header .close {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	border-radius: 5px
+}
+
+
+
+/*section {
+	min-height: 100vh;
+	background: #87cefa;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+section h2 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #444;
+	font-size: 2.5rem
+} */
+
+
+
+
+
+.movie-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.movie {
+	background-color: #d90947;
+	color : white; 
+	width: 250px; 
+	margin: 1rem; 
+	border-radius: 5px;
+	box-shadow: 0px -3px 5px rgba(0,0,0,0.1); 
+	overflow: hidden;
+	position: relative;
+}
+
+.movie img{
+	max-width: 100%;
+}
+
+.movie-info {
+	display: flex; 
+	padding: 1rem; 
+	align-items: center;
+	justify-content: space-between;
+}
+
+.movie-info h3 {
+	margin: 0; 
+	
+}
+
+.movie-over {
+	background-color: #fff;
+	opacity: 0.9;
+	padding: 1rem; 
+	color: #22254b; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	right: 0;
+	transform: translateY(102%); 
+	transition: transform 0.3s ease-in-out;
+	overflow: auto;
+	max-height: 100%;
+}
+
+.movie:hover .movie-over {
+	transform: translateY(0%); 
+}
+
+.searchdiv {
+	background-color: #101116;
+	padding: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.search {
+	font-family: inherit;
+	border: 1.5px solid white; 
+	color: white;
+	background-color: transparent;
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	border-radius: 50px;
+	outline: 0;
+	font-size: 1rem;
+}
+
+.searchf {
+	width: 100%;
+}
+
+.tag {
+	background-color: #141b30;
+	border-radius: 5px;
+	padding: 0.5rem; 
+	font-weight: bold;
+}
+
+.tag.green {
+	color: rgb(17, 224, 17); 
+}
+
+.tag.orange {
+	color: rgb(255, 166, 0);
+}
+
+.tag.red {
+	color: red;
+}
+
+.goback {
+	cursor: pointer;
+	color: #d90947; 
+	font-size: 1.5rem;
+	border-radius: 20px; 
+	border: 2px solid #d90947;
+	padding: 1rem; 
+	max-width: 200px;
+	margin: 1vh;
+	
+}
+
+.container {
+	display: inline-block;
+}
+
+.background img {
+	
+	top: 10px;
+	left: 10px;
+	z-index: -5;
+	position: fixed;
+	opacity: 0.25;
+	width: 100%;
+	object-fit: fill;
+	filter: blur(3px); 
+}
+
+.content {
+	margin: 5rem;
+	position: absolute;
+	color: whitesmoke; 
+	display: flex; 
+	
+	justify-content: center
+}
+
+.content h2 {
+	
+	font-size: 3rem;
+}
+
+
+
+.content img {
+	display : flex; 
+	max-width: 100%; 
+	width: 600px;
+	box-shadow: 5px 10px 18px #000; 
+	flex-basis: 40%;
+	margin-bottom: 100px;
+}
+
+
+
+.content-text {
+	margin-left: 25px;
+	max-width: 30%;
+
+}
+
+.content-text p {
+	font-size: 1.1rem;
+}
+
+.move-span {
+	margin-top: 25px; 
+}
+
+.release-date {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #d90947; 
+	margin: 10px;
+}
+
+
+@media (max-width:900px) {
+	
+	.content {
+		vertical-align: top;
+  	 	display: inline-block;
+    	width: 70%;
+		justify-content: center;
+		margin: 15%;
+	
+	
+	}
+	.contentimage img {
+		display: block;
+   		margin: 0 auto;
+	}
+
+	.content h2 {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+	.content-text {
+		margin-left: 3px;
+		max-width: 100%;
+	
+	}
+}
+
