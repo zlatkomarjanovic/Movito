@@ -20,5 +20,10 @@ ______________________________________
 ------------------------------------------
 Greetings Rubicon Team. First of all, thank you for considering this project. I sincerely hope that we can accomplish successful cooperation in the future.    
 
+___________________________________________
+(2) FAQ  
+    1. How the app was coded ? 
+        I used create-react-app module template to get the initial start on developing the app. After that the very first thing i started with were routes using react-router. Hence I created Navigation menu to have transitions between Movies and Shows pages. 
+
 
  
