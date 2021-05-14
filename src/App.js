@@ -2,7 +2,8 @@ import React, {Fragment} from 'react'
 import './index.css';
 import Navbar from './components/layout/Navbar';
 import Section  from './components/layout/Section';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
+
 
 const App = () => {
   return (
@@ -10,7 +11,9 @@ const App = () => {
       <Fragment>
         <Navbar />
          
-        <Section />
+        <Switch >
+          <Section /> 
+        </Switch> 
       </Fragment>
     </Router> 
   );
