@@ -1,6 +1,11 @@
-import React, {Fragment} from 'react'
+import React, {Fragment} from 'react' 
+// You will frequently see usage of fragments since I don't like to have 
+//unneccesary divs all around the place. 
+//The exact same logic goes for ShowDetails.js file so I decided to not comment it out.
 
-
+//Instead of writing this function in a seperate component you will also see it in multiple files 
+// since i figured out it works better when its called from the same component. I didn't test enough to 
+// see why that is the case but it is.
 const setVoteClass = (vote) => {
     if (vote >= 8) {
         return 'green'
@@ -11,16 +16,24 @@ const setVoteClass = (vote) => {
     }
 }
 
-const MOVIE = "https://api.themoviedb.org/3/movie/181812?api_key=40cfd6f06d23fa390065f3fa55c03d54&language=en-US"
-const MOVIETEMP = "https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US"
+// Why are my api urls here ? Why did I not put them in seperate files ? 
+// I understand perfectly well that API keys and API urls should be put in a seperate env files 
+// But the reason I didn't do that for this project is because it's a demo project
+// and due to ease of use. It will be a lot easier for you to run this project on your devices 
+// without having to do extra work with puting your own API keys and urls in env files.
 const IMAGEM = "https://image.tmdb.org/t/p/w1280"
 
 
+//This is a Movie details arrow functions that takes in props from Movies tab 
+//This functions displays detailed page view of movies.
+//The logic behind is fairly simple and obvious. 
 const MovieDetails = (props) => {
     const {title, overview, release_date, poster_path,vote_average, vote_count} = props.currentMovie; 
+    //Destructuring our props so that we don't always have to do props.currentMovie as it is annoying to do so.
     return (
         <Fragment>
             
+            {/*Go back functions just sets the state back to "null" and the movie displays top 10 again*/}
             <div className = "goback" onClick = {props.closeMovieInfo}>
                 <i className = "fa fa-arrow-left"> </i>
                 <span style = {{marginLeft: 10}}> Go Back </span>
@@ -29,6 +42,7 @@ const MovieDetails = (props) => {
             <div className = "container">
 
                 <div className = "background"> 
+                {/*What if our movie doesn't have a poster ? No problem just use pexels free stock photo !*/}
                 <img 
                     src = {
                         poster_path 

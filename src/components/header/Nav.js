@@ -5,7 +5,8 @@ import '../../index.css';
 const Nav = (props) => {
 
 
-
+//Perfect example of Link usage from react-router-dom. This is so efficent that I am in love 
+// with it. Works well, fast, much better than href in jsx.
 return(
   <Fragment>
     <ul>

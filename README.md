@@ -20,7 +20,12 @@ ______________________________________
 ------------------------------------------
 Greetings Rubicon Team. First of all, thank you for considering this project. I sincerely hope that we can accomplish successful cooperation in the future.    
 __________________________________________
-
+ Why are my api urls here ?   
+ Why did I not put them in seperate files ? 
+I understand perfectly well that API keys and API urls should be put in a seperate env files 
+ But the reason I didn't do that for this project is because it's a demo project
+ and due to ease of use. It will be a lot easier for you to run this projectonyour devices 
+without having to do extra work with puting your own API keys and urls in env files.
 
 
  
