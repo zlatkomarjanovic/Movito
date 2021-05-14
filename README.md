@@ -1,11 +1,11 @@
-Responsive : ✅
-React & React Router : ✅ 
-Functional components : ✅
-Live search : ✅
-Movies : ✅
-Shows : ✅
-MovieDB API : ✅
-JS : ✅
+Responsive : ✅  
+React & React Router : ✅   
+Functional components : ✅  
+Live search : ✅  
+Movies : ✅  
+Shows : ✅  
+MovieDB API : ✅  
+JS : ✅  
 ---------------------------------------
 Typescript: ❌(Can easily make a transition to Typescript)
 
