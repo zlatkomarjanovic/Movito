@@ -6,9 +6,6 @@ Movies : ✅
 Shows : ✅  
 MovieDB API : ✅  
 JS : ✅  
----------------------------------------
-Typescript: ❌(Can easily make a transition to Typescript)
-
 ______________________________________
 (1) INSTRUCTIONS ON HOW TO RUN THE APP :  
        1. Clone the repository using git clone + {url of repo}   
@@ -17,8 +14,6 @@ ______________________________________
        4. Remove "package-lock.json" folder  
        5. Run "npm start" in your desired terminal  
        6. Happy testing :D   
-------------------------------------------
-Greetings Rubicon Team. First of all, thank you for considering this project. I sincerely hope that we can accomplish successful cooperation in the future.    
 __________________________________________
 Why are my API URLs here?    
 Why did I not put them in separate files? I understand perfectly well that API keys and API URLs should be put in separate env files But the reason I didn't do that for this project is that it's a demo project and due to ease of use. It will be a lot easier for you to run this project on your device without having to do extra work with putting your API keys and URLs in env files.
